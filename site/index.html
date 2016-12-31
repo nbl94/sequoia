@@ -2,20 +2,79 @@
 <html>
 <head>
 	<title>HELLO HELLO </title>
+
+	<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Keith Swerling (keiths@topixonline.com) -->
+<!-- Web Site:  http://www.TopiXonline.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+ScrollSpeed = 200;
+ScrollChars = 1;
+
+function ScrollMarquee() {
+window.setTimeout('ScrollMarquee()', ScrollSpeed);
+var msg = document.form1.Scroll.value;
+document.form1.Scroll.value = msg.substring(ScrollChars) + msg.substring(0, ScrollChars);
+}
+//  End -->
+</script>
+
 </head>
-<body>
+<body OnLoad="javascript:ScrollMarquee()">
 <style>
-	h1 {width:600px;
-		background: yellow;
-		text-align: center;
+	* {box-sizing: border-box;}
+
+	body {background: white;
+		margin: 0;
+		padding: 0;
 	}
 
+	#box1 {width:50%;
+		height: 100px;
+		background: orange;
+		text-align: center;
+		padding: 10px;
+		border: 5px solid black;
+		margin: 0 25% 0 25%;
+		overflow: auto;
+	}
+
+	#content1 {
+		height: 100%;
+		background: grey;
+		text-align: center;
+		border-color: grey;
+	}
+
+	
 
 
 </style>
-<h1>HELLO CLARA</h1>
-<h1>HELLO ALICE</h1>
-<a href="indexClara.html" title="title"><div>lien vers le site de Clara</div></a>
+ <tr> 
+    <td width="21%" height="41" valign="top" align="center"> <b><code> Bienvenue
+      : </code></b></td>
+    <td width="57%" height="41" valign="center"> 
+
+    <form name="form1" >
+        <input type="text" name="Scroll" value="                       COOL CA DEFILE TOUT SEUL                           " size="50">
+      </form>
+    </td>
+  </tr>
+
+<a href="#Clara" title="title"><div>Clara</div></a>
+<a href="#Alice" title="title"><div>Alice</div></a>
+
+<h3 id="Clara">HELLO CLARA</h3>
+<div id="box1">
+	<div id="content1">
+		<a href="indexClara.html" title="title" target="blank_"><div>lien vers le site de Clara</div></a>
+	</div>
+</div>
+<h3 id="Alice">HELLO ALICE</h3>
 <a href="indexAlice.html" title="title"><div>lien vers le site de Alice</div></a>
+<a href="mailto:blotalberti@yahoo.com">@Contact</a>
 </body>
 </html>
